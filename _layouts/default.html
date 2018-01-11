@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+ 
+<html lang="es">
+ 
+<head>
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+  <meta name="keywords" content="Programador, desarrollador, developer, personal, página, Romina, Cofré, Mondaca, Ingeniera, civil, informática, python, c, c++, proyectos">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  
+
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="jumbotron" style="padding-top: 0px; padding-bottom: 25px;">
+
+        <div class="row" > 
+          <div class="col">
+            <img src="images/rominarecorte.jpg" width="100%">
+          </div>
+          <div class="col-md-10 align-self-end">
+              <h1><a href="{{ site.baseurl }}/">Romina Cofré Mondaca</a></h1>
+              <p>Programadora C/C++, Python, entre otros. Ingeniera civil informática.</p>
+            </div>
+
+          </div>
+        </div>
+    </header>
+
+    <div class="row">
+      <div class="col">
+        <section>
+          <div class="container">
+              <article>
+                  <h2>Áreas de interés</h2>
+                  <h6> IoT, M2M, BI, HPC </h6>
+                  <h6> Proyectos sociales, Emprendimiento </h6>
+              </article>
+           </div>
+        </section>
+        <br></br>
+        
+        <aside>
+          <div class="container">
+              <h3>Contacto</h3>
+              <ul>
+                {% include svg-icons.html %}
+                <li><a href="mailto:de.meenta@gmail.com">de.meenta@gmail.com</a></li>
+                <li><a href="https://www.linkedin.com/demeenta/">LinkedIn</a></li>
+                <li><a href="https://github.com/demeenta">GitHub</a></li>
+              </ul>
+            </div>
+        </aside>
+
+        <footer>
+          <div class="container">
+              Creado por Romina Cofré Mondaca
+            </div>
+        </footer>
+      </div>
+
+      <div class="col">
+        {{ content }}
+      </div>
+
+    </div>
+
+
+  </div>
+
+    {% include analytics.html %}
+</body>
+
+</html>
